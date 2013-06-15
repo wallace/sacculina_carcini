@@ -8,7 +8,5 @@ Feature: Infect a crab
     When the sacculini carcini attaches to the crab's attennae
     And the sacculini carcini sheds its abdomen and thorax
     And the sacculini carcini migrates to the mid-gut of the crab
-    And the sacculini carcini extends tendrils to secure itself and for nutrition
     And several weeks pass
-    Then the sacculini carcini extends externa through the abdomen of the crab
-
+    Then the crab's abdomen should have an externa
