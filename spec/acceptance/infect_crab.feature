@@ -5,7 +5,7 @@ Feature: Infect a crab
     And there is a sacculini carcini
 
   Scenario: infect the crab
-    When the sacculini carcini attaches to the crab's attenae
+    When the sacculini carcini attaches to the crab's attennae
     And the sacculini carcini sheds its abdomen and thorax
     And the sacculini carcini migrates to the mid-gut of the crab (just below the heart)
     And the sacculini carcini extends tendrils to secure itself and for nutrition
