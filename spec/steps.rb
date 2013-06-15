@@ -17,3 +17,11 @@ end
 step "the sacculini carcini migrates to the mid-gut of the crab" do
   @sacculini_carcini.migrate_to_gut
 end
+
+step "several weeks pass" do
+  @sacculini_carcini.tick(3 * 7 * 24 * 60 * 60) # 3 weeks in seconds
+end
+
+step "the crab's abdomen should have an externa" do
+  @crab.externa?
+end
