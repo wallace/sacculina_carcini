@@ -1,5 +1,5 @@
 class SacculiniCarcini
-  attr_reader :abdomen, :thorax
+  attr_reader :abdomen, :thorax, :host
 
   def initialize
     @abdomen = true
@@ -7,7 +7,9 @@ class SacculiniCarcini
   end
 
   def attach(host)
-    return true if host.antennae?
+    if host.antennae?
+      return @host = host
+    end
 
     false
   end
