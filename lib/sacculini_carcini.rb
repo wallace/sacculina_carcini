@@ -18,4 +18,8 @@ class SacculiniCarcini
     @abdomen = false
     @thorax  = false
   end
+
+  def migrate_to_gut
+    # find heart of host and hang out just below it
+  end
 end
