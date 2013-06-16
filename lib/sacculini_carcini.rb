@@ -1,6 +1,9 @@
 class SacculiniCarcini
   attr_reader :abdomen, :thorax, :host
 
+  WEEK_IN_SECONDS = 7 * 24 * 60 * 60
+  TIME_FROM_INFECTION_TO_EXTERNA = 2.5 * WEEK_IN_SECONDS
+
   def initialize
     @abdomen = true
     @thorax  = true
@@ -27,7 +30,7 @@ class SacculiniCarcini
   def tick(time_increments = 0)
     while time_increments > 0 do
       if @host &&
-        @time_since_infection >= 2.5 * 7 * 24 * 60 * 60
+        @time_since_infection >= TIME_FROM_INFECTION_TO_EXTERNA
         @host.instance_eval do
           def externa?
             true
