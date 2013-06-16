@@ -10,7 +10,8 @@ class SacculinaCarcini
   end
 
   def attach(host)
-    if host.antennae?
+    if host.is_a?(Crab)
+      # find soft joint and pierce the shell of the crab
       @time_since_infection = 0
       return @host = host
     end

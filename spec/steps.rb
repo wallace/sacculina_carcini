@@ -6,7 +6,7 @@ step "there is a sacculina carcini" do
   @sacculina_carcini = SacculinaCarcini.new
 end
 
-step "the sacculina carcini attaches to the crab's attennae" do
+step "the sacculina carcini attaches to the crab" do
   @sacculina_carcini.attach(@crab)
 end
 
