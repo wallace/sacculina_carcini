@@ -8,6 +8,7 @@ end
 
 step "the sacculina carcini attaches to the crab" do
   @sacculina_carcini.attach(@crab)
+  @crab.payload[:infection] = @sacculina_carcini
 end
 
 step "the sacculina carcini sheds its abdomen and thorax" do
@@ -24,4 +25,5 @@ end
 
 step "the crab's abdomen should have an externa" do
   @crab.externa?
+  expect(@crab.payload['infection']).to eq(@sacculina_carcini)
 end
