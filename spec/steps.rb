@@ -24,6 +24,6 @@ step "several weeks pass" do
 end
 
 step "the crab's abdomen should have an externa" do
-  @crab.externa?
+  expect(@crab.externa?).to be_true
   expect(@crab.payload['infection']).to eq(@sacculina_carcini)
 end
