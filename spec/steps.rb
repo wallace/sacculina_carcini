@@ -1,3 +1,7 @@
+step "I debug" do
+  debugger
+end
+
 step "there is a crab" do
   @crab = Crab.new
 end
