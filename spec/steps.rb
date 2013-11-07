@@ -7,6 +7,7 @@ step "there is a sacculina carcini" do
 end
 
 step "the sacculina carcini attaches to the crab" do
+  debugger
   @sacculina_carcini.attach(@crab)
   @crab.payload[:infection] = @sacculina_carcini
 end
